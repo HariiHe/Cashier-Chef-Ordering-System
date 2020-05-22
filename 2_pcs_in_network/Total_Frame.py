@@ -8,7 +8,7 @@ from client import client
 class TotalSection(object):
     def __init__(self, right):
         label4 = Label(right, text="Selected Items", width=30, height=2, font=("courier", 17, "bold"))
-        label5 = Label(right, text="Item          Price", width=30, height=2, font=("courier", 10, "bold"))
+        label5 = Label(right, text="Item                Price", width=30, height=2, font=("courier", 10, "bold"), anchor='w')
         label4.pack()
         label5.pack()
         TotalSection.createScrolling(self, right)
@@ -94,15 +94,18 @@ class DisplayItems():
         item = {x: val}
         ORDER.append(item)
         ITEM_VAL.append(val)
-        if len(x) < 4:
-            label = Label(TotalSection.scrollable_frame, text=x+"                        $"+num, width=40, height=1, font=("courier", 10, "bold"), anchor=W)
-        elif len(x) < 8 and len(x) > 4:
-            label = Label(TotalSection.scrollable_frame, text=x + "                 $" + num, width=40, height=1, font=("courier", 10, "bold"), anchor=W)
-        else:
-            label = Label(TotalSection.scrollable_frame, text=x + "         $" + num, width=40, height=1, font=("courier", 10, "bold"), anchor=W)
-
+        lab_text=x
+        lab_cost=str(num)
+        whitespace_num=40-len(x)-len(lab_cost)-1
+        counter_i=0
+        whitespace_txt=""
+        while(counter_i<whitespace_num):
+            whitespace_txt=whitespace_txt+" "
+            counter_i=counter_i+1
+        label_final_text=lab_text+whitespace_txt+"$"+lab_cost
+        label = Label(TotalSection.scrollable_frame, text=label_final_text, width=40, height=1, font=("courier", 10, "bold"), anchor="w")
         GLOBAL_ITEM_LABELS.append(label)
-        label.pack()
+        label.pack(fill='x')
         if x != "Dulces" and x!= "Varios" and x!= "Barbacoa":
             self.calculate()
 

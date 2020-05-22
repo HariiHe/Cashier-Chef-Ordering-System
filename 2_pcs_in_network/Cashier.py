@@ -10,7 +10,7 @@ class FullScreenApp(object):
         self.right.pack(side="right", expand=True, fill="both")
 
         pad = 3
-        self.master.title("Sistema de cobro")
+        self.master.title("Cashier")
         self._geom = '200x200+0+0'
         master.geometry("{0}x{1}+0+0".format(
             master.winfo_screenwidth() - pad, master.winfo_screenheight() - pad))
