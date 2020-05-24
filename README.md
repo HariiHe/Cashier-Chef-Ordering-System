@@ -37,10 +37,10 @@ First, on the chef PC, go to the chef.py program and change the IP to the IP of 
 
 Now, go to the file explorer on both PC and click on network on the left sidebar. The computers of the system needs to appear on the window, showing they are in the same network. 
 
-After that, open the command window and type the following:
+After that, open the command window and type the following:<br/>
 
-On cashier: ping *Chef PC IP address* - It needs to show a connection was made successfully
-On chef: ping *Cashier PC IP address*  - It need to show a connection was made successfully
+On cashier: ping *Chef PC IP address* - It needs to show a connection was made successfully<br/>
+On chef: ping *Cashier PC IP address*  - It need to show a connection was made successfully<br/>
 
 Then, open Windows Defender Firewall Advanced Security. On the left panel of the window, click on Inbound rules. Create a new rule by clicking on New Rule on the right panel of the window.
 Click on port on the new window that pops up. Select TCP rule and type in the specific port you are going to use to connect between the PCs 
