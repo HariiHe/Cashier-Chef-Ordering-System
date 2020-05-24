@@ -82,7 +82,7 @@ also show the total orders and sales of each day. All the files are stored in a 
 -An excel file is generated per day, in which every order is stored, along with the total orders per day and total sales.<br/>
 	
 ### Links
-Demo Link: 
+Demo Link: https://www.youtube.com/watch?v=dYPcA2sr3Pc
 
 ## Usage
 This system can be used in any restaurant where the order is taken by a cashier. This particular code was made with a menu for a Mexican restaurant, but it can easily be modified to fit the menu of any restaurant.
