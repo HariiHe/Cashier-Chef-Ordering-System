@@ -2,7 +2,7 @@
 Repository for CCOS
 
 ## Introduction
-The system provides a method of ordering in a restaurant, where the client goes to the cashier and he orders his food. The cashier selects the food ordered by the customer and when the cashier selects that the order was paid, the order is sent to the chef. The chef will have a PC displaying a queue of the orders. The chef will then be able to click/touch on any order number, see its content and selects it as complete, in which case, the order will disappear from the queue.
+The system provides a method of ordering in a restaurant, where the client goes to the cashier and he orders his food. The cashier selects the food ordered by the customer and when the cashier selects that the order was paid, the order is sent to the chef. The chef will have a PC displaying a queue of the orders. The chef will then be able to click/touch on any order number, see its content and select it as complete, in which case, the order will disappear from the queue.
 
 Cashier:<br/><br/>
 <img src = "Images/Capture.PNG" width = "800" style = "margin-left:auto;margin-right:auto;" > <br/><br/>
